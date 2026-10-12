@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>FoodLink - Create Account</title>
+
+    <link rel="stylesheet" href="./css/auth.css">
+</head>
+
+<body>
+
+    <div class="auth-container">
+
+        <div class="auth-card">
+
+            <!-- ================= LOGO ================= -->
+
+            <div class="logo">
+                🍱 Food<span>Link</span>
+            </div>
+
+
+            <!-- ================= HEADING ================= -->
+
+            <h1>
+                Create Account
+            </h1>
+
+            <p class="subtitle">
+                Join FoodLink and help reduce food waste.
+            </p>
+
+
+            <!-- ================= SIGNUP FORM ================= -->
+
+            <form id="signupForm">
+
+                <!-- NAME -->
+
+                <label for="signupName">
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="signupName"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+
+                <!-- EMAIL -->
+
+                <label for="signupEmail">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="signupEmail"
+                    placeholder="Enter your email"
+                    required
+                >
+
+
+                <!-- PHONE -->
+
+                <label for="signupPhone">
+                    Phone Number
+                </label>
+
+                <input
+                    type="tel"
+                    id="signupPhone"
+                    placeholder="Enter your phone number"
+                    required
+                >
+
+
+                <!-- PASSWORD -->
+
+                <label for="signupPassword">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="signupPassword"
+                    placeholder="Create a password"
+                    required
+                >
+
+
+                <!-- ROLE -->
+
+                <label for="signupRole">
+                    Select Role
+                </label>
+
+                <select
+                    id="signupRole"
+                    required
+                >
+
+                    <option value="">
+                        Select your role
+                    </option>
+
+                    <option value="donor">
+                        🍱 Donor
+                    </option>
+
+                    <option value="ngo">
+                        ❤️ NGO
+                    </option>
+
+                    <option value="volunteer">
+                        🚚 Volunteer
+                    </option>
+
+                </select>
+
+
+                <!-- NGO SELECTION FOR VOLUNTEER -->
+
+                <div
+                    id="ngoSelection"
+                    style="display: none;"
+                >
+
+                    <label for="volunteerNgo">
+                        Select NGO
+                    </label>
+
+                    <select id="volunteerNgo">
+
+                        <option value="">
+                            Select your NGO
+                        </option>
+
+                        <option value="FoodLink Helping Hands">
+                            FoodLink Helping Hands
+                        </option>
+
+                        <option value="Hope Foundation">
+                            Hope Foundation
+                        </option>
+
+                        <option value="Care & Share NGO">
+                            Care & Share NGO
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- SUBMIT -->
+
+                <button type="submit">
+                    Create Account
+                </button>
+
+            </form>
+
+
+            <!-- ================= LOGIN LINK ================= -->
+
+            <p class="switch-text">
+
+                Already have an account?
+
+                <a href="login.html">
+                    Login
+                </a>
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="js/auth.js"></script>
+
+</body>
+
+</html>

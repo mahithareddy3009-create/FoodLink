@@ -1,0 +1,16 @@
+
+# Dependencies
+node_modules/
+backend/node_modules/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Private user and donation data
+backend/data/users.json
+backend/data/donations.json
+
+# Local logs
+*.log

@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FoodLink | Admin Dashboard</title>
+
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+    <header class="admin-header">
+        <h2>🍲 FoodLink <span>Admin</span></h2>
+        <button id="logoutBtn">Logout</button>
+    </header>
+
+    <main class="admin-container">
+
+        <section class="welcome">
+            <h1>Admin Dashboard</h1>
+            <p>Monitor FoodLink's donations, NGOs, donors and volunteers.</p>
+        </section>
+
+        <!-- STATISTICS -->
+        <section class="stats-grid">
+
+            <article class="stat-card">
+                <p>Total Users</p>
+                <h2 id="totalUsers">0</h2>
+            </article>
+
+            <article class="stat-card">
+                <p>Donors</p>
+                <h2 id="totalDonors">0</h2>
+            </article>
+
+            <article class="stat-card">
+                <p>NGOs</p>
+                <h2 id="totalNgos">0</h2>
+            </article>
+
+            <article class="stat-card">
+                <p>Volunteers</p>
+                <h2 id="totalVolunteers">0</h2>
+            </article>
+
+            <article class="stat-card">
+                <p>Total Donations</p>
+                <h2 id="totalDonations">0</h2>
+            </article>
+
+        </section>
+
+        <!-- DONORS -->
+        <section class="admin-section">
+            <h2>👤 Registered Donors</h2>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Role</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="donorsTable">
+                        <tr>
+                            <td colspan="4">Loading donors...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- NGOS -->
+        <section class="admin-section">
+            <h2>🏢 Registered NGOs</h2>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Role</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="ngosTable">
+                        <tr>
+                            <td colspan="4">Loading NGOs...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- VOLUNTEERS -->
+        <section class="admin-section">
+            <h2>🤝 Registered Volunteers</h2>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Role</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="volunteersTable">
+                        <tr>
+                            <td colspan="4">Loading volunteers...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- ALL DONATIONS -->
+        <section class="admin-section">
+            <h2>🍲 All Donations</h2>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Food</th>
+                            <th>Quantity</th>
+                            <th>Donor</th>
+                            <th>NGO</th>
+                            <th>Volunteer</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="donationsTable">
+                        <tr>
+                            <td colspan="6">Loading donations...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="js/admin.js"></script>
+
+</body>
+</html>

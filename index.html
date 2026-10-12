@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>FoodLink | Connecting Surplus Food With People In Need</title>
+
+<link rel="stylesheet" href="css/style.css">
+```
+
+</head>
+
+<body>
+
+```
+<!-- NAVBAR -->
+<header>
+    <nav class="navbar">
+
+        <div class="logo">
+            <span>🍲</span> Food<span>Link</span>
+        </div>
+
+      <div class="nav-links">
+
+    <a href="#home">Home</a>
+
+    <a href="#how-it-works">
+        How It Works
+    </a>
+
+    <a href="#donations">
+        Donations
+    </a>
+
+    <a href="#about">
+        About
+    </a>
+
+    <a href="login.html" class="login-link">
+        Login
+    </a>
+
+    <button
+        class="nav-donate"
+        onclick="scrollToDonation()"
+    >
+        Donate Food
+    </button>
+
+</div>
+
+    </nav>
+</header>
+
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <p class="small-heading">REDUCE FOOD WASTE • FEED COMMUNITIES</p>
+
+        <h1>
+            Turn Surplus Food Into
+            <span>Hope.</span>
+        </h1>
+
+        <p class="hero-text">
+            FoodLink connects restaurants, events, hotels and individuals
+            with NGOs and volunteers to make sure surplus food reaches
+            people who need it instead of going to waste.
+        </p>
+
+        <div class="hero-buttons">
+            <button class="primary-btn" onclick="scrollToDonation()">
+                Donate Surplus Food
+            </button>
+
+            <a href="#how-it-works" class="secondary-btn">
+                Learn More →
+            </a>
+        </div>
+
+    </div>
+
+    <div class="hero-image">
+
+        <div class="food-card">
+
+            <div class="food-icon">
+                🍱
+            </div>
+
+            <div>
+                <h3>Surplus Food Available</h3>
+                <p>30 meal boxes • 2.5 km away</p>
+            </div>
+
+            <span class="available">
+                Available
+            </span>
+
+        </div>
+
+        <div class="circle circle-one"></div>
+        <div class="circle circle-two"></div>
+
+    </div>
+
+</section>
+
+
+<!-- STATS -->
+<section class="stats">
+
+    <div class="stat">
+        <h2 id="food-count">1,250+</h2>
+        <p>Meals Rescued</p>
+    </div>
+
+    <div class="stat">
+        <h2>85+</h2>
+        <p>Food Donors</p>
+    </div>
+
+    <div class="stat">
+        <h2>32+</h2>
+        <p>NGO Partners</p>
+    </div>
+
+    <div class="stat">
+        <h2>18</h2>
+        <p>Areas Covered</p>
+    </div>
+
+</section>
+
+
+<!-- HOW IT WORKS -->
+<section class="section" id="how-it-works">
+
+    <div class="section-heading">
+
+        <p class="small-heading">HOW FOODLINK WORKS</p>
+
+        <h2>
+            From Extra Food To
+            <span>Extra Hope.</span>
+        </h2>
+
+        <p>
+            A simple connection between people who have surplus food
+            and people who can distribute it to those in need.
+        </p>
+
+    </div>
+
+
+    <div class="steps">
+
+        <div class="step-card">
+
+            <div class="step-number">01</div>
+
+            <div class="step-icon">🍱</div>
+
+            <h3>Donate</h3>
+
+            <p>
+                Restaurants, events, hotels and individuals
+                post their available surplus food.
+            </p>
+
+        </div>
+
+
+        <div class="step-card">
+
+            <div class="step-number">02</div>
+
+            <div class="step-icon">🤝</div>
+
+            <h3>Connect</h3>
+
+            <p>
+                NGOs and volunteers discover nearby food
+                donations and accept them.
+            </p>
+
+        </div>
+
+
+        <div class="step-card">
+
+            <div class="step-number">03</div>
+
+            <div class="step-icon">🚚</div>
+
+            <h3>Collect</h3>
+
+            <p>
+                Volunteers collect the food from the donor
+                and safely transport it.
+            </p>
+
+        </div>
+
+
+        <div class="step-card">
+
+            <div class="step-number">04</div>
+
+            <div class="step-icon">❤️</div>
+
+            <h3>Share</h3>
+
+            <p>
+                The rescued food reaches communities
+                and people who need it.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- DONATIONS -->
+<section class="section donations-section" id="donations">
+
+    <div class="section-heading">
+
+        <p class="small-heading">AVAILABLE DONATIONS</p>
+
+        <h2>
+            Food Waiting To Be
+            <span>Rescued.</span>
+        </h2>
+
+        <p>
+            Examples of surplus food that can help feed communities.
+        </p>
+
+    </div>
+
+    <div class="donation-grid" id="donationGrid">
+
+        <!-- Sample Donation 1 -->
+        <div class="donation-card">
+
+            <div class="donation-top">
+                <span class="food-category">🍛 Meals</span>
+                <span class="status">Available</span>
+            </div>
+
+            <h3>Vegetable Rice &amp; Curry</h3>
+
+            <p class="donor">
+                🏪 Green Leaf Restaurant
+            </p>
+
+            <div class="donation-info">
+                <span>👥 25 meals</span>
+                <span>📍 1.8 km away</span>
+            </div>
+
+            <div class="expiry">
+                ⏰ Best before: 9:00 PM
+            </div>
+
+        </div>
+
+        <!-- Sample Donation 2 -->
+        <div class="donation-card">
+
+            <div class="donation-top">
+                <span class="food-category">🥪 Snacks</span>
+                <span class="status">Available</span>
+            </div>
+
+            <h3>Sandwiches &amp; Fruits</h3>
+
+            <p class="donor">
+                🏢 Sunrise Events
+            </p>
+
+            <div class="donation-info">
+                <span>👥 40 meals</span>
+                <span>📍 3.2 km away</span>
+            </div>
+
+            <div class="expiry">
+                ⏰ Best before: 8:30 PM
+            </div>
+
+        </div>
+
+        <!-- Sample Donation 3 -->
+        <div class="donation-card">
+
+            <div class="donation-top">
+                <span class="food-category">🍲 Cooked Food</span>
+                <span class="status">Available</span>
+            </div>
+
+            <h3>Dal, Rice &amp; Chapati</h3>
+
+            <p class="donor">
+                🏨 City View Hotel
+            </p>
+
+            <div class="donation-info">
+                <span>👥 60 meals</span>
+                <span>📍 4.5 km away</span>
+            </div>
+
+            <div class="expiry">
+                ⏰ Best before: 10:00 PM
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- DONATION FORM -->
+<section class="donate-section" id="donate">
+
+    <div class="donate-container">
+
+        <div class="donate-info">
+
+            <p class="small-heading">ARE YOU A FOOD DONOR?</p>
+
+            <h2>
+                Have Surplus Food?
+                <span>Share It.</span>
+            </h2>
+
+            <p>
+                Don't let good food go to waste. Tell us what food
+                you have available and connect with an organization
+                that can distribute it.
+            </p>
+
+            <div class="benefit">
+                <span>✓</span>
+                Reduce food waste
+            </div>
+
+            <div class="benefit">
+                <span>✓</span>
+                Help your community
+            </div>
+
+            <div class="benefit">
+                <span>✓</span>
+                Make every meal count
+            </div>
+
+        </div>
+
+
+        <form class="donation-form" id="donationForm">
+
+            <h3>Post a Food Donation</h3>
+
+            <label>Food Name</label>
+            <input
+                type="text"
+                id="foodName"
+                placeholder="e.g. Vegetable Rice"
+                required
+            >
+
+            <label>Quantity</label>
+            <input
+                type="number"
+                id="quantity"
+                placeholder="Number of meals"
+                required
+            >
+
+            <label>Pickup Location</label>
+            <input
+                type="text"
+                id="location"
+                placeholder="Enter pickup location"
+                required
+            >
+
+            <label>Best Before</label>
+            <input
+                type="time"
+                id="expiry"
+                required
+            >
+
+            <button type="submit" class="primary-btn">
+                Post Donation
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+<section class="about" id="about">
+
+    <div>
+
+        <p class="small-heading">OUR MISSION</p>
+
+        <h2>
+            Good Food Should Never
+            <span>Go To Waste.</span>
+        </h2>
+
+        <p>
+            FoodLink aims to build a bridge between surplus food
+            and communities that need it. By making food donation
+            easier and faster, we can reduce waste and create
+            meaningful social impact.
+        </p>
+
+    </div>
+
+    <div class="mission-box">
+        <div>🌱</div>
+        <h3>Zero Food Waste</h3>
+        <p>
+            Every rescued meal is a step toward a more
+            sustainable community.
+        </p>
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <div class="footer-logo">
+        🍲 Food<span>Link</span>
+    </div>
+
+    <p>
+        Connecting surplus food with communities that need it.
+    </p>
+
+    <p class="copyright">
+        © 2026 FoodLink. Built for a better tomorrow.
+    </p>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+```
+
+</body>
+</html>

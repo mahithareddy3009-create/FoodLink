@@ -1,0 +1,703 @@
+/* =====================================
+   RESET
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =====================================
+   BODY
+===================================== */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fffaf5;
+    color: #263238;
+}
+
+
+/* =====================================
+   NAVBAR
+===================================== */
+
+.navbar {
+    height: 72px;
+    background: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 6%;
+
+    border-bottom: 1px solid #eee;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+
+/* LOGO */
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+    color: #176b5b;
+}
+
+.logo span {
+    color: #f47c6c;
+}
+
+
+/* NAV RIGHT */
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+/* VOLUNTEER NAME */
+
+.volunteer-name {
+    font-weight: 600;
+    color: #176b5b;
+}
+
+
+/* LOGOUT */
+
+.logout-btn {
+    border: none;
+    background: #f47c6c;
+    color: white;
+
+    padding: 10px 20px;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.logout-btn:hover {
+    background: #ee624f;
+    transform: translateY(-2px);
+}
+
+
+/* =====================================
+   DASHBOARD
+===================================== */
+
+.dashboard {
+    width: 90%;
+    max-width: 1250px;
+
+    margin: auto;
+
+    padding: 45px 0 70px;
+}
+
+
+/* =====================================
+   WELCOME
+===================================== */
+
+.welcome {
+    margin-bottom: 35px;
+}
+
+.small-heading {
+    color: #f47c6c;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 8px;
+}
+
+.welcome h1 {
+    font-size: 34px;
+
+    color: #176b5b;
+
+    margin-bottom: 8px;
+}
+
+.welcome h1 span {
+    color: #f47c6c;
+}
+
+.welcome > p:last-child {
+    color: #777;
+
+    font-size: 16px;
+}
+
+
+/* =====================================
+   STATS
+===================================== */
+
+.stats {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 22px;
+
+    margin-bottom: 35px;
+}
+
+
+.stat-card {
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 24px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+
+    transition: 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.09);
+}
+
+
+/* STAT ICON */
+
+.stat-icon {
+    width: 55px;
+    height: 55px;
+
+    border-radius: 15px;
+
+    background: #e8f5f1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+}
+
+
+/* STAT NUMBER */
+
+.stat-card h2 {
+    color: #176b5b;
+
+    font-size: 28px;
+
+    margin-bottom: 4px;
+}
+
+.stat-card p {
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* =====================================
+   DONATIONS CONTAINER
+===================================== */
+
+.donations-container {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+
+    align-items: start;
+}
+
+
+/* =====================================
+   DONATION SECTION
+===================================== */
+
+.donations-section {
+    background: white;
+
+    padding: 26px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+
+    min-height: 300px;
+}
+
+
+/* =====================================
+   SECTION HEADING
+===================================== */
+
+.section-heading {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 22px;
+
+    padding-bottom: 18px;
+
+    border-bottom: 1px solid #eee;
+}
+
+
+.section-heading h2 {
+    color: #176b5b;
+
+    font-size: 22px;
+}
+
+
+.section-icon {
+    width: 45px;
+    height: 45px;
+
+    background: #fff3ed;
+
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 21px;
+}
+
+
+/* =====================================
+   DONATION LIST
+===================================== */
+
+.donation-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+
+/* =====================================
+   DONATION CARD
+===================================== */
+
+.donation-item {
+    border: 1px solid #eee;
+
+    border-radius: 15px;
+
+    padding: 18px;
+
+    background: #fffdfb;
+
+    transition: 0.3s;
+}
+
+.donation-item:hover {
+    border-color: #f47c6c;
+
+    transform: translateY(-2px);
+}
+
+
+/* =====================================
+   DONATION DETAILS
+===================================== */
+
+.donation-details {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+
+.donation-details h3 {
+    color: #176b5b;
+
+    font-size: 18px;
+
+    margin-bottom: 4px;
+}
+
+
+.donation-details p {
+    color: #666;
+
+    font-size: 14px;
+}
+
+
+/* =====================================
+   DONATION ICON
+===================================== */
+
+.donation-icon {
+    width: 42px;
+    height: 42px;
+
+    background: #e8f5f1;
+
+    border-radius: 11px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 20px;
+
+    margin-bottom: 10px;
+}
+
+
+/* =====================================
+   STATUS
+===================================== */
+
+.donation-status {
+    display: inline-block;
+
+    margin-top: 10px;
+
+    padding: 6px 11px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    background: #fff1d6;
+
+    color: #9a6500;
+}
+
+
+/* =====================================
+   ACTION BUTTON
+===================================== */
+
+.action-btn {
+    width: 100%;
+
+    margin-top: 14px;
+
+    padding: 11px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #176b5b;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.action-btn:hover {
+    background: #125446;
+
+    transform: translateY(-2px);
+}
+
+
+/* DELIVER BUTTON */
+
+.deliver-btn {
+    background: #f47c6c;
+}
+
+.deliver-btn:hover {
+    background: #ee624f;
+}
+
+
+/* =====================================
+   DELIVERED CARD
+===================================== */
+
+.delivered-card {
+    border-left: 4px solid #176b5b;
+}
+
+
+/* =====================================
+   EMPTY STATE
+===================================== */
+
+.empty-state {
+    text-align: center;
+
+    padding: 45px 15px;
+
+    color: #999;
+}
+
+
+.empty-state-icon {
+    font-size: 42px;
+
+    margin-bottom: 12px;
+}
+
+
+.empty-state h3 {
+    color: #666;
+
+    margin-bottom: 7px;
+
+    font-size: 17px;
+}
+
+
+.empty-state p {
+    font-size: 14px;
+
+    color: #999;
+}
+
+
+/* =====================================
+   RESPONSIVE - TABLET
+===================================== */
+
+@media (max-width: 900px) {
+
+    .dashboard {
+        width: 94%;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .donations-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =====================================
+   RESPONSIVE - MOBILE
+===================================== */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 0 20px;
+
+        height: 65px;
+    }
+
+    .logo {
+        font-size: 21px;
+    }
+
+    .volunteer-name {
+        display: none;
+    }
+
+    .logout-btn {
+        padding: 9px 14px;
+    }
+
+    .dashboard {
+        padding: 30px 0 50px;
+    }
+
+    .welcome h1 {
+        font-size: 27px;
+    }
+
+    .donations-section {
+        padding: 20px;
+    }
+
+    .section-heading h2 {
+        font-size: 19px;
+    }
+
+}/* =====================================
+   VOLUNTEER TOAST NOTIFICATION
+===================================== */
+
+.success-toast {
+    position: fixed;
+
+    right: 30px;
+    bottom: 30px;
+
+    max-width: 380px;
+
+    background: #176b5b;
+    color: white;
+
+    padding: 16px 22px;
+
+    border-radius: 12px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    line-height: 1.5;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.18);
+
+    z-index: 9999;
+
+    animation:
+        toastSlideIn 0.35s ease;
+}
+
+
+/* Toast disappears */
+
+.success-toast.toast-hide {
+    animation:
+        toastSlideOut 0.3s ease forwards;
+}
+
+
+/* =====================================
+   TOAST ANIMATION
+===================================== */
+
+@keyframes toastSlideIn {
+
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+
+@keyframes toastSlideOut {
+
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+
+}
+
+
+/* =====================================
+   MOBILE TOAST
+===================================== */
+
+@media (max-width: 600px) {
+
+    .success-toast {
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+
+        max-width: none;
+
+        text-align: center;
+    }
+
+}
+/* =========================================================
+   VOLUNTEER STATUS BUTTONS
+========================================================= */
+
+.donation-actions {
+    margin-top: 20px;
+}
+
+.status-btn {
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    padding: 13px 18px;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pickup-btn {
+    background: #176b5b;
+}
+
+.pickup-btn:hover {
+    background: #125446;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(23, 107, 91, 0.25);
+}
+
+.delivered-btn {
+    background: #f47c6c;
+}
+
+.delivered-btn:hover {
+    background: #ee624f;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(244, 124, 108, 0.25);
+}
+
+.status-btn:active {
+    transform: translateY(0);
+}
+
+.status-btn:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}

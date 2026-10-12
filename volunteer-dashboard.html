@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FoodLink | Volunteer Dashboard</title>
+
+    <link rel="stylesheet" href="css/volunteer.css">
+</head>
+
+<body>
+
+    <!-- ===============================
+         NAVBAR
+    ================================ -->
+
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                🍱 Food<span>Link</span>
+            </div>
+
+            <div class="nav-right">
+
+                <span id="volunteerName" class="volunteer-name">
+                    Volunteer
+                </span>
+
+                <button class="logout-btn" onclick="logout()">
+    Logout
+</button>
+
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- ===============================
+         MAIN DASHBOARD
+    ================================ -->
+
+    <main class="dashboard">
+
+        <!-- WELCOME -->
+
+        <section class="welcome">
+
+            <p class="small-heading">
+                VOLUNTEER DASHBOARD
+            </p>
+
+            <h1>
+                Welcome,
+                <span id="welcomeName">
+                    Volunteer
+                </span>! 👋
+            </h1>
+
+            <p>
+                Help collect and deliver surplus food to the community.
+            </p>
+
+        </section>
+
+
+        <!-- ===============================
+             STATS
+        ================================ -->
+
+        <section class="stats">
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    📦
+                </div>
+
+                <div>
+                    <h2 id="assignedCount">
+                        0
+                    </h2>
+
+                    <p>
+                        Assigned Donations
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    🚚
+                </div>
+
+                <div>
+                    <h2 id="pickupCount">
+                        0
+                    </h2>
+
+                    <p>
+                        Picked Up
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    ❤️
+                </div>
+
+                <div>
+                    <h2 id="deliveredCount">
+                        0
+                    </h2>
+
+                    <p>
+                        Delivered
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ===============================
+             ASSIGNED + DELIVERED
+        ================================ -->
+
+        <div class="donations-container">
+
+
+            <!-- ===============================
+                 ASSIGNED DONATIONS
+            ================================ -->
+
+            <section class="donations-section">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <p class="small-heading">
+                            YOUR TASKS
+                        </p>
+
+                        <h2>
+                            Assigned Donations
+                        </h2>
+
+                    </div>
+
+                    <span class="section-icon">
+                        📦
+                    </span>
+
+                </div>
+
+
+                <div
+                    id="assignedDonationList"
+                    class="donation-list"
+                >
+
+                    <!-- Assigned donations appear here -->
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ===============================
+                 DELIVERED DONATIONS
+            ================================ -->
+
+            <section class="donations-section">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <p class="small-heading">
+                            COMPLETED
+                        </p>
+
+                        <h2>
+                            Delivered Donations
+                        </h2>
+
+                    </div>
+
+                    <span class="section-icon">
+                        ❤️
+                    </span>
+
+                </div>
+
+
+                <div
+                    id="deliveredDonationList"
+                    class="donation-list"
+                >
+
+                    <!-- Delivered donations appear here -->
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- ===============================
+         JAVASCRIPT
+    ================================ -->
+
+    <script src="js/volunteer.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>FoodLink | Donor Dashboard</title>
+
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                🍱 Food<span>Link</span>
+            </div>
+
+            <div class="nav-right">
+
+                <a href="index.html" class="home-link">
+                    Home
+                </a>
+
+                <button
+                    id="logoutBtn"
+                    class="logout-btn">
+                    Logout
+                </button>
+
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- ================= DASHBOARD ================= -->
+
+    <main class="dashboard">
+
+        <!-- ================= WELCOME ================= -->
+
+        <section class="welcome">
+
+            <div>
+
+                <p class="small-heading">
+                    DONOR DASHBOARD
+                </p>
+
+                <h1>
+                    Welcome back! 👋
+                </h1>
+
+                <p>
+                    Turn your surplus food into something meaningful.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= STATISTICS ================= -->
+
+        <section class="stats">
+
+            <div class="stat-card">
+
+                <div class="stat-icon teal">
+                    🍱
+                </div>
+
+                <div>
+
+                    <h2 id="totalDonations">
+                        0
+                    </h2>
+
+                    <p>
+                        Total Donations
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon orange">
+                    🤝
+                </div>
+
+                <div>
+
+                    <h2 id="acceptedDonations">
+                        0
+                    </h2>
+
+                    <p>
+                        Accepted
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon yellow">
+                    ❤️
+                </div>
+
+                <div>
+
+                    <h2 id="deliveredDonations">
+                        0
+                    </h2>
+
+                    <p>
+                        Delivered
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= POST DONATION ================= -->
+
+        <section class="dashboard-grid">
+
+            <div class="donation-form-card">
+
+                <div class="section-title">
+
+                    <div>
+
+                        <p class="small-heading">
+                            SHARE FOOD
+                        </p>
+
+                        <h2>
+                            Post Surplus Food
+                        </h2>
+
+                    </div>
+
+                    <span class="title-icon">
+                        🍲
+                    </span>
+
+                </div>
+
+
+                <form id="donationForm">
+
+                    <!-- FOOD NAME -->
+
+                    <div class="form-group">
+
+                        <label for="foodName">
+                            Food Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="foodName"
+                            placeholder="e.g. Vegetable Rice"
+                            required>
+
+                    </div>
+
+
+                    <!-- QUANTITY + TYPE -->
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="quantity">
+                                Quantity
+                            </label>
+
+                            <input
+                                type="number"
+                                id="quantity"
+                                placeholder="Number of meals"
+                                min="1"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="foodType">
+                                Food Type
+                            </label>
+
+                            <select
+                                id="foodType"
+                                required>
+
+                                <option value="">
+                                    Select type
+                                </option>
+
+                                <option value="Meals">
+                                    🍛 Meals
+                                </option>
+
+                                <option value="Snacks">
+                                    🥪 Snacks
+                                </option>
+
+                                <option value="Bakery">
+                                    🥐 Bakery
+                                </option>
+
+                                <option value="Fruits">
+                                    🍎 Fruits
+                                </option>
+
+                                <option value="Other">
+                                    🍱 Other
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- LOCATION -->
+
+                    <div class="form-group">
+
+                        <label for="location">
+                            Pickup Location
+                        </label>
+
+                        <input
+                            type="text"
+                            id="location"
+                            placeholder="Enter pickup location"
+                            required>
+
+                    </div>
+
+
+                    <!-- ================= PICKUP DATE ================= -->
+
+                    <div class="form-group">
+
+                        <label for="pickupDate">
+                            Pickup Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="pickupDate"
+                            required>
+
+                    </div>
+
+
+                    <!-- ================= PICKUP TIME ================= -->
+
+                    <div class="form-group">
+
+                        <label for="pickupTime">
+                            Pickup Time
+                        </label>
+
+                        <input
+                            type="time"
+                            id="pickupTime"
+                            required>
+
+                    </div>
+
+
+                    <!-- ================= BEST BEFORE ================= -->
+
+                    <div class="form-group">
+
+                        <label for="expiry">
+                            Best Before
+                        </label>
+
+                        <input
+                            type="datetime-local"
+                            id="expiry"
+                            required>
+
+                    </div>
+
+
+                    <!-- ================= SUBMIT ================= -->
+
+                    <button
+                        type="submit"
+                        class="post-btn">
+
+                        🍱 Post Donation
+
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <!-- ================= IMPACT CARD ================= -->
+
+            <div class="impact-card">
+
+                <div class="impact-icon">
+                    🌱
+                </div>
+
+                <h2>
+                    Every Meal Matters
+                </h2>
+
+                <p>
+                    Your surplus food can become someone's next meal.
+                    Together, we can reduce food waste and support
+                    our community.
+                </p>
+
+
+                <div class="impact-points">
+
+                    <div>
+                        <span>✓</span>
+                        Reduce food waste
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        Support local communities
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        Make a meaningful impact
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= MY DONATIONS ================= -->
+
+        <section class="my-donations">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="small-heading">
+                        YOUR ACTIVITY
+                    </p>
+
+                    <h2>
+                        My Donations
+                    </h2>
+
+                </div>
+
+                <span id="donationCount">
+                    0 donations
+                </span>
+
+            </div>
+
+
+            <div
+                id="donationList"
+                class="donation-list">
+
+                <!-- Donations appear here -->
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="js/donor.js"></script>
+
+</body>
+
+</html>
