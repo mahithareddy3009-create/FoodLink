@@ -6,7 +6,7 @@ const cors = require("cors");
 const crypto = require("crypto");
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // ==============================
 // DATA FILES
@@ -399,9 +399,7 @@ app.put("/api/donations/:id", function (req, res) {
 // START SERVER
 // ==============================
 
-app.listen(PORT, function () {
+app.listen(PORT, "0.0.0.0", function () {
     console.log("FoodLink Backend Started 🚀");
-    console.log(
-        "Server running at http://localhost:" + PORT
-    );
+    console.log("Server running on port " + PORT);
 });
